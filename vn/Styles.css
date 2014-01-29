@@ -1,0 +1,13 @@
+﻿body {
+   
+    background-color: rgb(15, 4,35);
+    background: linear-gradient(to top, rgb(15, 4,35), black);
+    height:100%;
+    color:white;
+}
+
+canvas
+{
+    border: thin solid grey;
+    color: white;
+}

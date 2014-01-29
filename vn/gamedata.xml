@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<GameData>
+  <chapter name="">
+    <t>This is regular text</t>
+    <s speed="" >This is regular speech text</t>  //speed is optional, use 
+    <f>This is full text</f>
+    <display background="" >
+  </chapter>  
+</GameData>-->
+<GameData>
+  <chapter name="start">
+    <t>This is regular text</t>
+    <t>second text</t>
+    <t>First
+      Third text but with 
+      break in the line
+      this should be fourth line
+      Fifth 
+      last
+    </t>
+    <s>TALK TEXT BLAH
+    BLAH BLAH</s>
+    <f>This is full text</f>
+  </chapter>
+</GameData>

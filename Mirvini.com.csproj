@@ -85,6 +85,7 @@
     <Content Include="phaser\scripts\phaser.js" />
     <Content Include="phaser\scripts\phaser.min.js" />
     <Content Include="phaser\sfx\flyingTheme.m4a" />
+    <Content Include="scripts\jquery-2.1.1.min.js" />
     <Content Include="test.html" />
     <Content Include="vn\gamedata.xml">
       <SubType>Designer</SubType>

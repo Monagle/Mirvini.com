@@ -84,6 +84,7 @@
             width: 100%;
         }
     </style>
+    <script src="scripts/jquery-2.1.1.min.js"></script>
 </head>
 
 <body>
@@ -96,8 +97,8 @@
             <tr>
                 <!--<td class="left"></td>-->
                 <td>
-                    <h1>There is nothing here yet.</h1>
-                    <img src="img.png" alt="missing image">
+                    <h1>There is <span id="nothing">nothing</span> here yet.</h1>
+                    <img id="headGuy" src="img.png" alt="missing image">
                 </td>
             </tr>
         </table>
@@ -105,3 +106,40 @@
 </body>
 
 </html>
+
+<Script type="text/javascript">
+    $(document).ready(function () {
+        $("#nothing").mouseenter(nothing1);
+    });
+
+
+    function nothing1() {
+        $(this).unbind('mouseenter')
+        $(this).animate({ 'font-size': '100px' }, 10000, 'linear', nothing2);
+        $('#headGuy').fadeOut(30000);
+        $('.top').fadeTo(30000,0.01);
+    };
+
+    function nothing2() {
+        $(this).text("something");
+        $(this).animate({ 'font-size': '115px' }, 150, 'linear', nothing3);
+    };
+
+    function nothing3() {
+        $(this).text("nothing");
+        $(this).animate({ 'font-size': '200px' }, 9900, 'linear', nothing4);
+    };
+    function nothing4() {
+        $(this).text("EVERYTHING");
+        $(this).animate({ 'font-size': '215px' }, 150, 'linear', nothing5);
+    };
+    function nothing5() {
+        $(this).text("nothing");
+        $(this).animate({ 'font-size': '300px' }, 9900, 'linear', final);
+    };
+
+    function final() {
+        $(this).css('color', 'white');
+        $('body').css('background', 'black')
+    }
+</Script>
